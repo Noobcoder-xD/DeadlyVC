@@ -12,21 +12,21 @@ load_dotenv()
 admins = {}
 
 #REQUIRED
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH", None)
-BOT_TOKEN = getenv("BOT_TOKEN", None)
-DB_URL = getenv("DB_URL", None) 
-LOG_ID = int(getenv("LOG_ID")) 
-OWNER_ID = int(getenv("OWNER_ID"))
+API_ID = int(getenv("API_ID", "29400566"))
+API_HASH = getenv("API_HASH", "8fd30dc496aea7c14cf675f59b74ec6f")
+BOT_TOKEN = getenv("BOT_TOKEN", "6935496455:AAGndnOEhoNwWrtMzfGCEipdIQruucVVWdg") 
+DB_URL = getenv("DB_URL", "mongodb+srv://developervro:developerrapuka@cluster9.gcj9754.mongodb.net/?retryWrites=true&w=majority&appName=Cluster9") 
+LOG_ID = int(getenv("LOG_ID", "-1001959134296")) 
+OWNER_ID = int(getenv("OWNER_ID", "6903041211"))
 
-GROUP_SUPPORT = getenv("GROUP_SUPPORT", None)
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", None)
-ALIVE_NAME = getenv("ALIVE_NAME", None)
-OWNER_NAME = getenv("OWNER_NAME", None)
+GROUP_SUPPORT = getenv("GROUP_SUPPORT", "https://t.me/MusicSycoSupport")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "https://t.me/MusicSycoSupport")
+ALIVE_NAME = getenv("ALIVE_NAME", "Bellala Music")
+OWNER_NAME = getenv("OWNER_NAME", "Bellala pavan")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5937170640").split()))
 
 
-if str(getenv("STRING_SESSION1")).strip() == "":
+if str(getenv("STRING_SESSION1")).strip() == "BQHBxJYAdnLlQ9ZQp_D-E7vP8beasWshUchGgxH-1mHHNBgtiJ0cP8NLqKTWK62OFtl5agF4gdn20Ts6o25__HNNVfl8ObN3T0SUOKbjB4miHid9iCmLzsVV2RsGvon2mdP-6wHGX7Rnn78yZTWD3v7NsY7q19n0o2JRGYHiJJzJ3woJ6uPc5BKBK1GLsSHm_QKyQkNbIvHK4kTMN6-bub4Y3PWYMoJxlQ-3IKB8wesizEkP0qrbEVau66VKMD7kAaRaSwmdzl9VvkSHXWsNCY0UnU4lHdBVmprjUmHONkd0BRyjDp6BOcmiaIfKMv4occIWi_qzKh4DDzNBEvTxrvjs1yZkgQAAAAGksOwYAA":
     STRING1 = str(None)
 else:
     STRING1 = str(getenv("STRING_SESSION1"))
@@ -50,7 +50,7 @@ else:
 #EXTRA
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "300"))
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Elric-xD/DeadlyVC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Noobcoder-xD/DeadlyVC")
 
 
 #IMAGES
